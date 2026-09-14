@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olivia ADAMAH - Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Réduire / afficher la sidebar">‹</button>
+    <div class="sidebar-top">
+      <div class="avatar-wrap">
+        <img src="assets/photo.jpg" alt="Olivia ADAMAH" class="avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="avatar-fallback">OA</div>
+      </div>
+
+      <h1 class="name-title">Olivia ADAMAH</h1>
+      <span class="badge-pill" data-i18n="badge">Étudiante Data Science &amp; IA</span>
+
+      <div class="contact-list">
+        <div class="contact-item">
+          <span class="icon">✉</span>
+          <div>
+            <p class="contact-label" data-i18n="email_label">EMAIL</p>
+            <p class="contact-value">adamaholivia444@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="icon">☎</span>
+          <div>
+            <p class="contact-label" data-i18n="phone_label">TÉLÉPHONE</p>
+            <p class="contact-value">+33 7 62 94 90 50</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="icon">📍</span>
+          <div>
+            <p class="contact-label" data-i18n="location_label">LOCALISATION</p>
+            <p class="contact-value">Strasbourg, France</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="icon">🎂</span>
+          <div>
+            <p class="contact-label" data-i18n="age_label">ÂGE</p>
+            <p class="contact-value" data-i18n="age_value">22 ans</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="socials">
+        <a href="https://linkedin.com/in/olivia-adamah" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="https://github.com/aivilo-adamah" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+        <a href="mailto:adamaholivia444@gmail.com" aria-label="Email">✉</a>
+      </div>
+    </div>
+  </aside>
+
+  <button class="sidebar-reopen" id="sidebarReopen" type="button" aria-label="Afficher la sidebar" hidden>›</button>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="main">
+
+    <nav class="topnav">
+      <div class="nav-links">
+        <a href="#about" class="nav-link active" data-i18n="nav_about">À propos</a>
+        <a href="#formations" class="nav-link" data-i18n="nav_formations">Formations</a>
+        <a href="#experience" class="nav-link" data-i18n="nav_experience">Expérience</a>
+        <a href="#projets" class="nav-link" data-i18n="nav_projets">Projets</a>
+        <a href="#competences" class="nav-link" data-i18n="nav_competences">Compétences</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+      </div>
+
+      <div class="control-group">
+        <button class="lang-toggle" id="langToggle" type="button">
+          <span class="lang-option active" data-lang="fr">FR</span>
+          <span class="lang-sep">/</span>
+          <span class="lang-option" data-lang="en">EN</span>
+        </button>
+
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span class="theme-icon sun">☀</span>
+          <span class="theme-icon moon">☾</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ---------- ABOUT ---------- -->
+    <section id="about" class="section">
+      <h2 class="section-title" data-i18n="about_title">À propos de moi</h2>
+      <div class="title-underline"></div>
+
+      <p class="about-text" data-i18n="about_p1">
+        Je suis Olivia ADAMAH, étudiante en dernière année de Master à l'Université de Strasbourg, je passionnée par la Data Science et l'Intelligence Artificielle. Mon projet professionnel est de devenir Data Scientist.
+      </p>
+      <p class="about-text" data-i18n="about_p2">
+        Après une Licence en Informatique à l'UFR Mathématiques et Informatique de Strasbourg, je poursuis actuellement un Master en Connaissances, Science des Données et Intelligence Artificielle (CODIA). J'ai renforcé mes compétences grâce à un stage en data science autour de la modélisation prédictive, ainsi qu'à travers plusieurs projets réalisés tout au long de mon parcours.
+      </p>
+
+      <!-- <div class="interests-note">
+        <p class="interests-label" data-i18n="interests_label">Centres d'intérêt</p>
+        <p class="interests-text" data-i18n="interests_text">Voyages - j'ai notamment eu l'occasion de séjourner au Luxembourg, une expérience qui a nourri mon ouverture d'esprit et mon goût pour la découverte de nouvelles cultures.</p>
+      </div> -->
+    </section>
+
+    <!-- ---------- FORMATIONS ---------- -->
+    <section id="formations" class="section">
+      <h2 class="section-title" data-i18n="formations_title">Formations</h2>
+      <div class="title-underline"></div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <span class="timeline-date" data-i18n="edu1_date">2025 – 2027</span>
+          <h4 class="timeline-role" data-i18n="edu1_role">Master CODIA - Connaissances, Science des Données et IA</h4>
+          <p class="timeline-sub" data-i18n="edu1_sub">UFR Mathématiques et Informatique, Strasbourg</p>
+          <p class="timeline-stack">Python, R, Statistiques appliquées, Machine Learning, Deep Learning, RAG, MongoDB</p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date" data-i18n="edu2_date">2024 – 2025</span>
+          <h4 class="timeline-role" data-i18n="edu2_role">Licence en Informatique</h4>
+          <p class="timeline-sub" data-i18n="edu2_sub">UFR Mathématiques et Informatique, Strasbourg</p>
+          <p class="timeline-stack">Algorithmique, Structures de données, Python, R, SQL, PostgreSQL</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---------- EXPÉRIENCE ---------- -->
+    <section id="experience" class="section">
+      <h2 class="section-title" data-i18n="experience_title">Expérience</h2>
+      <div class="title-underline"></div>
+
+      <div class="exp-tabs">
+        <button class="exp-tab-btn active" data-tab="pro" type="button" data-i18n="exp_tab_pro">Expérience professionnelle</button>
+        <button class="exp-tab-btn" data-tab="assoc" type="button" data-i18n="exp_tab_assoc">Engagement associatif</button>
+      </div>
+
+      <div class="exp-panel active" data-panel="pro">
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-date" data-i18n="exp1_date">Avr. 2026 – Juil. 2026</span>
+            <h4 class="timeline-role" data-i18n="exp1_role">Stage - Data Scientist, TWISTAROMA (laboratoire d'analyse chimique)</h4>
+            <p class="timeline-sub">Illkirch-Graffenstaden</p>
+            <ul class="timeline-list">
+              <li data-i18n="exp1_l1">Collecte, nettoyage et préparation des données d'analyse chimique GC-MS</li>
+              <li data-i18n="exp1_l2">Exploration des corrélations entre composés chimiques et profils aromatiques</li>
+              <li data-i18n="exp1_l3">Développement de modèles de prédiction des arômes de la bière à partir des composés du houblon</li>
+              <li data-i18n="exp1_l4">Conception d'une interface de visualisation avec Streamlit</li>
+            </ul>
+            <p class="timeline-stack">Excel · Python (Pandas, NumPy, Scikit-learn, PubChemPy) · Streamlit · Docker</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-panel" data-panel="assoc">
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-date" data-i18n="assoc1_date">Depuis 2025</span>
+            <h4 class="timeline-role" data-i18n="assoc1_role">Vice-trésorière (Campus d'Illkirch)</h4>
+            <p class="timeline-sub" data-i18n="assoc1_sub">Amicale des Informaticiens de l'Université de Strasbourg (AIUS), Strasbourg</p>
+            <ul class="timeline-list">
+              <li data-i18n="assoc1_l1">Gestion de la caisse, suivi et enregistrement des recettes</li>
+              <li data-i18n="assoc1_l2">Transmission des fonds au trésorier</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date" data-i18n="assoc2_date">Séminaire</span>
+            <h4 class="timeline-role" data-i18n="assoc2_role">Séminaire international EUCOR - Informatique</h4>
+            <p class="timeline-sub" data-i18n="assoc2_sub">Programme trinational réunissant plusieurs universités du Rhin supérieur (France, Allemagne, Suisse)</p>
+            <ul class="timeline-list">
+              <li data-i18n="assoc2_l1">Participation au séminaire international EUCOR en informatique</li>
+            </ul>
+            <button class="timeline-photo-btn" type="button" data-lightbox="assets/img/Eucor1.jpg" data-lightbox-alt="Séminaire international EUCOR">
+              <img src="assets/img/Eucor1.jpg" alt="Séminaire international EUCOR" class="timeline-photo-thumb">
+              <span class="timeline-photo-label" data-i18n="assoc2_photo_label">Voir la photo →</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- PROJETS ---------- -->
+    <section id="projets" class="section">
+      <h2 class="section-title" data-i18n="projets_title">Projets</h2>
+      <div class="title-underline"></div>
+
+      <!-- Machine Learning -->
+      <h3 class="subsection-title" data-i18n="projets_ml_title">Projets Machine Learning</h3>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-banner banner-1"></div>
+          <p class="project-tag">TWISTAROMA</p>
+          <h3 class="project-name" data-i18n="proj1_name">Prédiction des arômes de la bière</h3>
+          <p class="project-desc" data-i18n="proj1_desc">Modélisation prédictive des profils aromatiques à partir des composés chimiques du houblon (régression, arbres de régression) et visualisation Streamlit.</p>
+          <button class="project-link" type="button" data-modal="modal-twistaroma">
+            <span data-i18n="proj_details">En savoir plus</span> →
+          </button>
+        </article>
+
+        <article class="project-card">
+          <div class="project-banner banner-2"></div>
+          <p class="project-tag">Kaggle · IDC Dataset</p>
+          <h3 class="project-name" data-i18n="proj2_name">Breast Cancer Classification (Deep Learning)</h3>
+          <p class="project-desc" data-i18n="proj2_desc">Classification d'images histologiques avec un CNN pour la détection du cancer du sein ; gestion du déséquilibre des classes et évaluation par recall / F1-score.</p>
+          <a class="project-link" href="https://github.com/aivilo-adamah/Breast_Cancer_Classification.git" target="_blank" rel="noopener">
+            <span data-i18n="proj_github">Voir sur GitHub</span> →
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-banner banner-3"></div>
+          <p class="project-tag">Université de Strasbourg</p>
+          <h3 class="project-name" data-i18n="proj3_name">Prédiction de survie des startups en France</h3>
+          <p class="project-desc" data-i18n="proj3_desc">Collecte de données INSEE, feature engineering et comparaison de modèles (régression logistique, Random Forest, réseaux de neurones).</p>
+          <a class="project-link" href="https://github.com/aivilo-adamah/SDA_Prediction_survie_startups.git" target="_blank" rel="noopener">
+            <span data-i18n="proj_github">Voir sur GitHub</span> →
+          </a>
+        </article>
+
+      </div>
+
+      <!-- BI & Analytics - en attente d'éléments, section masquée pour l'instant
+      <h3 class="subsection-title" data-i18n="projets_bi_title">Projets BI &amp; Analytics</h3>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-banner banner-2"></div>
+          <p class="project-tag">Power BI</p>
+          <h3 class="project-name" data-i18n="proj4_name">Tableau de bord interactif des ventes</h3>
+          <p class="project-desc" data-i18n="proj4_desc">Conception d'un tableau de bord Power BI selon un processus en trois étapes : chargement des données depuis une source OLTP, transformation avec Power Query (nettoyage, gestion des valeurs manquantes, calcul du chiffre d'affaires et des bénéfices), puis analyse sur un modèle OLAP agrégeant les données par temps, pays et catégories de produits. Visualisations dynamiques pour suivre l'évolution du chiffre d'affaires mensuel et identifier les tendances clés.</p>
+        </article>
+
+      </div>
+      -->
+
+      <!-- IA / LLM - en attente d'éléments, section masquée pour l'instant
+      <h3 class="subsection-title" data-i18n="projets_llm_title">Projets IA / LLM</h3>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-banner banner-1"></div>
+          <p class="project-tag">Python · LangChain · Chroma · Ollama</p>
+          <h3 class="project-name" data-i18n="proj5_name">Assistant personnel RAG sur documents privés</h3>
+          <p class="project-desc" data-i18n="proj5_desc">Conception et développement d'un assistant conversationnel permettant d'interroger des documents privés en langage naturel avec réponses sourcées, via une architecture RAG. Benchmark comparatif de solutions LLM locales vs API. Projet en équipe de 4, gestion via Git/GitHub.</p>
+        </article>
+
+      </div>
+      -->
+    </section>
+
+    <!-- ---------- COMPÉTENCES ---------- -->
+    <section id="competences" class="section">
+      <h2 class="section-title" data-i18n="competences_title">Compétences</h2>
+      <div class="title-underline"></div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4 data-i18n="skill1_title">Langages</h4>
+          <div class="tags">
+            <span>Python</span><span>R</span><span>C</span><span>SQL</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4 data-i18n="skill2_title">Data Science &amp; IA</h4>
+          <div class="tags">
+            <span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>TensorFlow</span><span>PyTorch</span><span>CNN</span><span>RNN</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4 data-i18n="skill3_title">BI &amp; Analytics</h4>
+          <div class="tags">
+            <span>Excel</span><span>Power BI</span><span>Matplotlib</span><span>Seaborn</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4 data-i18n="skill4_title">Bases de données</h4>
+          <div class="tags">
+            <span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4 data-i18n="skill5_title">Langues</h4>
+          <div class="tags">
+            <span data-i18n="lang_fr_tag">Français - Professionnel</span><span data-i18n="lang_en_tag">Anglais - Professionnel</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4 data-i18n="skill6_title">IA / LLM</h4>
+          <div class="tags">
+            <span>RAG</span><span>Prompt engineering</span><span>Embeddings</span><span>LangChain</span><span>Chroma</span><span>Ollama</span><span>FastAPI</span><span>Streamlit</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- CONTACT ---------- -->
+    <section id="contact" class="section">
+      <h2 class="section-title" data-i18n="contact_title">Contact</h2>
+      <div class="title-underline"></div>
+
+
+      <div class="contact-grid">
+        <a href="mailto:adamaholivia444@gmail.com" class="contact-card">
+          <span class="icon">✉</span>
+          <div>
+            <p class="contact-label" data-i18n="email_label">EMAIL</p>
+            <p class="contact-value">adamaholivia444@gmail.com</p>
+          </div>
+        </a>
+        <a href="tel:+33762949050" class="contact-card">
+          <span class="icon">☎</span>
+          <div>
+            <p class="contact-label" data-i18n="phone_label">TÉLÉPHONE</p>
+            <p class="contact-value">+33 7 62 94 90 50</p>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/olivia-adamah" target="_blank" rel="noopener" class="contact-card">
+          <span class="icon">in</span>
+          <div>
+            <p class="contact-label">LINKEDIN</p>
+            <p class="contact-value">@olivia-adamah</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 Olivia Adamah - <span data-i18n="footer_rights">Tous droits réservés</span></p>
+    </footer>
+
+  </main>
+</div>
+
+<!-- ===================== MODAL : TWISTAROMA ===================== -->
+<div class="modal-overlay" id="modal-twistaroma">
+  <div class="modal-box">
+    <button class="modal-close" type="button" data-close-modal aria-label="Fermer">✕</button>
+
+    <p class="project-tag" data-i18n="modal_tw_tag">TWISTAROMA · Laboratoire d'analyse chimique</p>
+    <h3 class="modal-title" data-i18n="modal_tw_title">Prédiction des arômes de la bière</h3>
+    <p class="modal-loc" data-i18n="modal_tw_loc">Illkirch-Graffenstaden · Avr. 2026 – Juil. 2026</p>
+
+    <p class="modal-private-badge">🔒 <span data-i18n="modal_tw_private">Projet réalisé en entreprise dans le cadre d'un stage - code source privé, non disponible publiquement</span></p>
+
+    <p class="modal-section-label" data-i18n="modal_tw_lab_label">Le laboratoire</p>
+    <p class="modal-text" data-i18n="modal_tw_lab_text">TWISTAROMA est un laboratoire d'analyse chimique spécialisé dans l'étude des composés aromatiques, notamment via la technique GC-MS (chromatographie en phase gazeuse couplée à la spectrométrie de masse).</p>
+
+    <p class="modal-section-label" data-i18n="modal_tw_project_label">Le projet</p>
+    <p class="modal-text" data-i18n="modal_tw_project_text">Développer un modèle capable de prédire les arômes de la bière à partir des composés chimiques mesurés dans le houblon, afin d'aider à anticiper les profils aromatiques.</p>
+
+    <p class="modal-section-label" data-i18n="modal_tw_missions_label">Mes missions</p>
+    <ul class="modal-list">
+      <li data-i18n="exp1_l1">Collecte, nettoyage et préparation des données d'analyse chimique GC-MS</li>
+      <li data-i18n="exp1_l2">Exploration des corrélations entre composés chimiques et profils aromatiques</li>
+      <li data-i18n="exp1_l3">Développement de modèles de prédiction des arômes de la bière à partir des composés du houblon</li>
+      <li data-i18n="modal_tw_l5">Mesure de la performance des modèles et ajustement des paramètres</li>
+      <li data-i18n="exp1_l4">Conception d'une interface de visualisation avec Streamlit</li>
+    </ul>
+
+    <p class="modal-stack">Excel · Python (Pandas, NumPy, Scikit-learn, PubChemPy) · Régression linéaire · Arbres de régression · Streamlit · Docker</p>
+  </div>
+</div>
+
+<!-- ===================== LIGHTBOX : PHOTO ===================== -->
+<div class="lightbox-overlay" id="lightbox">
+  <button class="lightbox-close" type="button" data-close-lightbox aria-label="Fermer">✕</button>
+  <img src="" alt="" class="lightbox-img" id="lightboxImg">
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
